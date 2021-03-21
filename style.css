@@ -134,6 +134,30 @@ button {
   font-weight: bold;
 }
 
+#footer_picture {
+  opacity: 60%;
+}
+
+#blue_banner {
+  background-color: var(--lightblue);
+  height: 5vw;
+}
+
+#footer_container {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 2vw;
+}
+
+#footer_logo {
+  width: 8%;
+}
 /*--------------------------------frontpage END---------------------------------------*/
 
 /*------------------------------------------------------------------------------------*/
@@ -251,6 +275,7 @@ button {
 
   #navbar_logo {
     margin-left: 1vh;
+    width: 80%;
   }
 
   .column_buttom img {
@@ -273,6 +298,10 @@ button {
 
   #navbar_logo {
     width: 80%;
+  }
+
+  p {
+    font-size: 1.5vw;
   }
 }
 
