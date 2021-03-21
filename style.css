@@ -14,7 +14,7 @@
 }
 
 img {
-  width: 80%;
+  width: 100%;
 }
 
 /*------------------------------------------------------------------------------------*/
@@ -38,7 +38,7 @@ img {
 #navbar_logo {
   color: black;
   justify-self: start;
-  margin-left: 20px;
+  margin-left: 3vh;
   cursor: pointer;
 }
 
@@ -78,6 +78,10 @@ img {
 h1 {
   margin-top: 5vh;
   margin-left: 3.5vh;
+  font-family: wreath, sans-serif;
+  font-weight: 700;
+
+  font-style: normal;
 }
 
 #frontpage_container {
@@ -128,6 +132,8 @@ button {
 /*------------------------------------------------------------------------------------*/
 /*                                     MEDIA QURIES                                   */
 /*------------------------------------------------------------------------------------*/
+
+/*---------mobile---------*/
 @media screen and (max-width: 768px) {
   .nav_container {
     position: relative;
@@ -176,7 +182,7 @@ button {
   #mobile_menu {
     position: absolute;
     top: 20%;
-    right: 5%;
+    right: 10%;
     transform: translate(5%, 20%);
   }
 
@@ -202,6 +208,15 @@ button {
   }
 }
 
+/*-------tablet--------*/
+@media screen and (min-width: 768px) {
+  h1 {
+    margin-top: 8vh;
+    margin-left: 10vh;
+  }
+}
+
+/*---------laptop---------*/
 @media screen and (min-width: 1024px) {
   #frontpage_container {
     display: flex;
@@ -219,5 +234,22 @@ button {
 
   h1 {
     margin-left: 11.5vh;
+    margin-top: 12vh;
   }
+}
+
+/*----laptop large------*/
+@media screen and (min-width: 1440px) {
+  h1 {
+    margin-left: 13.5vh;
+    margin-top: 11vh;
+  }
+
+  #navbar_logo {
+    width: 80%;
+  }
+}
+
+/*---------4K---------*/
+@media screen and (min-width: 2560px) {
 }
