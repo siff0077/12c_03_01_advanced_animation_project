@@ -13,9 +13,16 @@
   font-family: sans-serif;
 }
 
+img {
+  width: 80%;
+}
+
+/*------------------------------------------------------------------------------------*/
+/*                                     NAV BAR START                                  */
+/*------------------------------------------------------------------------------------*/
 .nav_container {
   width: 100%;
-  background-color: darkgrey;
+  background-color: --white;
 }
 
 .navbar {
@@ -29,7 +36,7 @@
 }
 
 #navbar_logo {
-  color: white;
+  color: black;
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
@@ -46,12 +53,12 @@
 }
 
 .nav_links {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
 .nav_links:hover {
-  color: red;
+  color: var(--matteblue);
   transition: all 0.2s ease-out;
 }
 
@@ -60,9 +67,67 @@
   height: 3px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
-  background: white;
+  background: black;
+}
+/*----------------------------------nav bar END---------------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+/*                                   FRONTPAGE START                                  */
+/*------------------------------------------------------------------------------------*/
+
+h1 {
+  margin-top: 5vh;
+  margin-left: 3.5vh;
 }
 
+#frontpage_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+
+.column_top {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--lightblue);
+  padding: 10vh;
+}
+
+h2 {
+  align-self: center;
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+.column_buttom {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.column_buttom img {
+  align-self: center;
+}
+
+button {
+  margin-top: 4vh;
+  max-width: 50vh;
+  align-self: center;
+  padding: 1vh;
+  background-color: var(--matteblue);
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*--------------------------------frontpage END---------------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+/*                                     MEDIA QURIES                                   */
+/*------------------------------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   .nav_container {
     position: relative;
@@ -71,7 +136,7 @@
   .nav_menu {
     display: grid;
     grid-template-columns: auto;
-    background: red;
+    background: var(--matteblue);
     margin: 0;
     position: absolute;
     top: 80px;
@@ -85,7 +150,7 @@
   }
 
   .nav_menu.active {
-    background: darkgrey;
+    background: var(--white);
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -134,5 +199,25 @@
 
   #mobile_menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #frontpage_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .column_buttom img {
+    width: 100%;
+  }
+
+  .column_top {
+    width: 150vh;
+  }
+
+  h1 {
+    margin-left: 11.5vh;
   }
 }
