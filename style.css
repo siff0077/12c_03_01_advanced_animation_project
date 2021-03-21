@@ -110,10 +110,17 @@ h2 {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 66%,
+    rgba(201, 215, 227, 1) 66%,
+    rgba(201, 215, 227, 1) 100%
+  );
 }
 
 .column_buttom img {
   align-self: center;
+  width: 80%;
 }
 
 button {
@@ -230,6 +237,7 @@ button {
 
   .column_buttom img {
     width: 100%;
+    padding: 20px;
   }
 
   .column_top {
@@ -243,6 +251,16 @@ button {
 
   #navbar_logo {
     margin-left: 1vh;
+  }
+
+  .column_buttom img {
+    background: linear-gradient(
+      90deg,
+      rgba(201, 215, 227, 1) 0%,
+      rgba(201, 215, 227, 1) 30%,
+      rgba(201, 215, 227, 1) 33%,
+      rgba(255, 255, 255, 1) 33%
+    );
   }
 }
 
