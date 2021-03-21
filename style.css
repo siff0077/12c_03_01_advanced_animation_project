@@ -214,6 +214,10 @@ button {
     margin-top: 8vh;
     margin-left: 10vh;
   }
+
+  #navbar_logo {
+    margin-left: 8vh;
+  }
 }
 
 /*---------laptop---------*/
@@ -235,6 +239,10 @@ button {
   h1 {
     margin-left: 11.5vh;
     margin-top: 12vh;
+  }
+
+  #navbar_logo {
+    margin-left: 1vh;
   }
 }
 
