@@ -141,6 +141,7 @@ button {
 #blue_banner {
   background-color: var(--lightblue);
   height: 5vw;
+  margin-top: -4px;
 }
 
 #footer_container {
@@ -159,6 +160,112 @@ p {
   width: 8%;
 }
 /*--------------------------------frontpage END---------------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+/*                                   BUBBLE ANIMATION                                  */
+/*------------------------------------------------------------------------------------*/
+.bubbles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.bubble {
+  position: absolute;
+  bottom: 0px;
+  width: 70px;
+  height: 70px;
+  background: transparent;
+  border-radius: 50%;
+  opacity: 0%;
+  animation: flying 10s ease-in-out;
+}
+.bubble:nth-child(1) {
+  width: 60px;
+  height: 60px;
+  left: 10%;
+  animation-duration: 8s;
+  flex-grow: 3;
+}
+
+.bubble:nth-child(2) {
+  width: 40px;
+  height: 40px;
+  left: 20%;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  flex-grow: 3;
+}
+.bubble:nth-child(3) {
+  width: 70px;
+  height: 70px;
+  left: 35%;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  flex-grow: 3;
+}
+.bubble:nth-child(4) {
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  animation-duration: 7s;
+  animation-delay: 0s;
+  flex-grow: 3;
+}
+.bubble:nth-child(5) {
+  width: 55px;
+  height: 55px;
+  left: 55%;
+  animation-duration: 6s;
+  animation-delay: 1s;
+  flex-grow: 3;
+}
+.bubble:nth-child(6) {
+  width: 100px;
+  height: 100px;
+  left: 65%;
+  animation-duration: 8s;
+  animation-delay: 3s;
+}
+.bubble:nth-child(7) {
+  width: 65px;
+  height: 65px;
+  left: 75%;
+  animation-duration: 7s;
+  animation-delay: 2s;
+}
+.bubble:nth-child(8) {
+  width: 100px;
+  height: 100px;
+  left: 75%;
+  animation-duration: 7s;
+  animation-delay: 2s;
+}
+
+@keyframes flying {
+  0% {
+    bottom: -500px;
+    transform: translateX(0);
+    opacity: 0.9;
+  }
+
+  50% {
+    bottom: 1080px;
+    transform: translateX(100px);
+    opacity: 0.9;
+  }
+
+  100% {
+    bottom: 1080px;
+    transform: translateX(-200px);
+    opacity: 0.9;
+  }
+}
 
 /*------------------------------------------------------------------------------------*/
 /*                                     MEDIA QURIES                                   */
@@ -286,6 +393,40 @@ p {
       rgba(201, 215, 227, 1) 33%,
       rgba(255, 255, 255, 1) 33%
     );
+  }
+
+  .bubble:nth-child(1) {
+    width: 160px;
+    height: 160px;
+  }
+
+  .bubble:nth-child(2) {
+    width: 140px;
+    height: 140px;
+  }
+  .bubble:nth-child(3) {
+    width: 170px;
+    height: 170px;
+  }
+  .bubble:nth-child(4) {
+    width: 100px;
+    height: 100px;
+  }
+  .bubble:nth-child(5) {
+    width: 155px;
+    height: 155px;
+  }
+  .bubble:nth-child(6) {
+    width: 100px;
+    height: 100px;
+  }
+  .bubble:nth-child(7) {
+    width: 165px;
+    height: 165px;
+  }
+  .bubble:nth-child(8) {
+    width: 100px;
+    height: 100px;
   }
 }
 
