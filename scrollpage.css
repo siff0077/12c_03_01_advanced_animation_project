@@ -1,3 +1,5 @@
+/* scroll-behavior: smooth; */
+
 :root {
   --matteblue: #778896;
   --lightblue: #c9d7e3;
@@ -15,6 +17,45 @@
 
 img {
   width: 100%;
+}
+
+progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 15px;
+  border: none;
+  background: transparent;
+}
+progress::-webkit-progress-bar {
+  background: transparent;
+}
+progress::-webkit-progress-value {
+  background: linear-gradient(
+    to left,
+    #db38b5,
+    #01b3e3,
+    #25ce7b,
+    #fdc741,
+    #ff6b01,
+    #fc4236
+  );
+  background-attachment: fixed;
+}
+progress::-moz-progress-bar {
+  background: linear-gradient(
+    to left,
+    #db38b5,
+    #01b3e3,
+    #25ce7b,
+    #fdc741,
+    #ff6b01,
+    #fc4236
+  );
+  background-attachment: fixed;
 }
 
 /*------------------------------------------------------------------------------------*/
@@ -95,7 +136,7 @@ h1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: var(--lightblue);
+  background-color: var(--lightbrown);
   padding: 10vh;
 }
 
@@ -103,7 +144,7 @@ h2 {
   align-self: center;
   color: var(--white);
   text-transform: uppercase;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 .column_buttom {
@@ -123,15 +164,9 @@ h2 {
   width: 80%;
 }
 
-button {
-  margin-top: 4vh;
-  max-width: 50vh;
+.button {
   align-self: center;
-  padding: 1vh;
-  background-color: var(--matteblue);
   color: var(--white);
-  text-transform: uppercase;
-  font-weight: bold;
 }
 
 #footer_picture {
@@ -162,17 +197,17 @@ p {
 /*--------------------------------frontpage END---------------------------------------*/
 
 /*------------------------------------------------------------------------------------*/
-/*                                   BUBBLE ANIMATION                                  */
+/*                                   ANIMATIONS                                       */
 /*------------------------------------------------------------------------------------*/
+
+/*------------BUBBLES----------*/
 .bubbles {
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 0;
   overflow: hidden;
   top: 0;
   left: 0;
-  z-index: 2;
 }
 
 .bubble {
@@ -182,7 +217,7 @@ p {
   height: 70px;
   background: transparent;
   border-radius: 50%;
-  opacity: 0%;
+  opacity: 0;
   animation: flying 10s ease-in-out;
 }
 .bubble:nth-child(1) {
@@ -265,6 +300,33 @@ p {
     transform: translateX(-200px);
     opacity: 0.9;
   }
+}
+/*------------PROGRESS----------*/
+progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 7px;
+  border: none;
+  background: transparent;
+}
+
+progress::-webkit-progress-value {
+  background: var(--matteblue);
+  background-attachment: fixed;
+}
+
+section {
+  min-height: 100vh;
+  padding: 10vw 5vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 /*------------------------------------------------------------------------------------*/
