@@ -204,12 +204,17 @@ section p {
   background-color: white;
 }
 
+#column_right,
+#column_left {
+  align-self: center;
+}
+
 p {
   font-size: 2vw;
 }
 
-#footer_logo {
-  max-width: 15% !important;
+#bathtub_logo {
+  width: 16vw;
   height: auto;
 }
 /*--------------------------------frontpage END---------------------------------------*/
