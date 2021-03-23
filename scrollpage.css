@@ -209,7 +209,7 @@ p {
 }
 
 #footer_logo {
-  max-width: 15%;
+  max-width: 15% !important;
   height: auto;
 }
 /*--------------------------------frontpage END---------------------------------------*/
