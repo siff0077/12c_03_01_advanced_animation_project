@@ -96,6 +96,8 @@ progress::-moz-progress-bar {
 .nav_links {
   color: black;
   text-decoration: none;
+  z-index: 1;
+  position: relative;
 }
 
 .nav_links:hover {
