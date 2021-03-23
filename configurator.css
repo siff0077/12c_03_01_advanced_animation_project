@@ -1,3 +1,56 @@
+/* Hero New Hairline
+
+font-family: hero-new-hairline, sans-serif;
+
+font-weight: 100;
+
+font-style: normal;
+
+
+Hero New Hairline Italic
+
+font-family: hero-new-hairline, sans-serif;
+
+font-weight: 100;
+
+font-style: italic;
+
+
+Hero New Regular
+
+font-family: hero-new, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Hero New Regular Italic
+
+font-family: hero-new, sans-serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Hero New Bold Italic
+
+font-family: hero-new, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+
+
+Hero New Bold
+
+font-family: hero-new, sans-serif;
+
+font-weight: 700;
+
+font-style: normal; */
+
 :root {
   --matteblue: #778896;
   --lightblue: #c9d7e3;
@@ -53,6 +106,8 @@ img {
 .nav_links {
   color: black;
   text-decoration: none;
+  z-index: 1;
+  position: relative;
 }
 
 .nav_links:hover {
@@ -79,6 +134,29 @@ h2 {
 h3 {
   margin-top: 1em;
   margin-bottom: 0.5em;
+  font-family: hero-new, sans-serif;
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 0.8em;
+}
+
+h4 {
+  font-family: hero-new, sans-serif;
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 0.8em;
+}
+
+p {
+  font-family: hero-new, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+footer p {
+  font-family: hero-new, sans-serif;
+  font-weight: lighter;
+  font-style: normal;
 }
 
 #headlines {
@@ -94,17 +172,20 @@ h3 {
 
 #bathtub_basic {
   /* background-image: url("layout_images/bathtub_background.jpg"); */
-  display: flex;
-  height: 40vh;
+  height: auto;
   width: 80vw;
-  align-items: center;
 }
 
 #selected_features {
   background-color: white;
-  border: solid 2px #968468;
+  border: solid 0.1em #778896;
+  box-shadow: 3px 3px 8px #778896;
   width: 80vw;
   height: 10vh;
+}
+
+#colorselector {
+  margin-top: 1em;
 }
 
 #features {
@@ -202,6 +283,64 @@ p {
   display: none;
 }
 
+/************************************** FROM TEDDY CONFIGURATOR *********/
+
+svg {
+  width: 80%;
+}
+
+#shadow_Billede {
+  pointer-events: none;
+}
+
+.g_to_interact_with {
+  fill: transparent;
+  cursor: pointer;
+}
+
+path {
+  stroke-width: 2;
+}
+
+/* Animation classes */
+
+.animate-feature-in {
+  /* TODO: Create animation for adding a feature */
+  animation-name: move_in;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+}
+
+@keyframes move_in {
+  0% {
+    transform: translate(var(--diffx), var(--diffy)) scale(0);
+  }
+
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+.animate-feature-out {
+  animation-name: move_out;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-direction: reverse;
+  /* TODO: Create animation for removing a feature */
+}
+
+@keyframes move_out {
+  0% {
+    transform: translate(var(--diffx), var(--diffy)) scale(0);
+  }
+
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+/************************************** ABOVE IS THE TEDDY CONFIGURATOR *********/
+
 /***MEDIA Q***/
 
 /*---------mobile---------*/
@@ -255,6 +394,7 @@ p {
     top: 20%;
     right: 10%;
     transform: translate(5%, 20%);
+    z-index: 1;
   }
 
   .menu_toggle .bar {
