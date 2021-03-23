@@ -7,6 +7,7 @@
     <title>12c_03_01_advanced animation project</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/ocw7pxm.css">
+    <link rel="stylesheet" href="https://use.typekit.net/sqz0gel.css">
 </head>
 <body>
 
@@ -36,7 +37,7 @@
             <ul class="nav_menu">
                 <li><a href="index.html" class="nav_links">Frontpage</a></li>
                 <li><a href="configurator.html" class="nav_links">Configurator</a></li>
-                <li><a href="about.html" class="nav_links">About</a></li>
+                <li><a href="scrollpage.html" class="nav_links">Facts</a></li>
             </ul>
         </nav>
     </div>
@@ -47,7 +48,9 @@
     <div id="frontpage_container">
         <div class="column_top">
             <h2>Relax and <br> enjoy life?</h2>
-            <button type="button">Design your bath here</button>
+            <div id="button_container">
+                <button type="button"><a href="configurator.html">Design your bath here</a></button>
+            </div>
 
         </div>
     
@@ -56,6 +59,7 @@
         </div>
     </div>
 
+ 
     <footer>
         <img id="footer_picture" src="layout_images/footer_pic.png" alt="footerpicture">
         <div id="blue_banner"></div>
@@ -66,10 +70,11 @@
                 for a project at KEA</p>
             </div>
 
-            <img id="footer_logo" src="layout_images/logo.png" alt="logo">
-
-
+            <div id="footer_logo">
+                <img id="bathtub_logo" src="layout_images/logo.png" alt="logo">
+            </div>
        
+
              <div id="column_right">
                  <p>Made by<br>
                  Siff Leva Jensen<br>
