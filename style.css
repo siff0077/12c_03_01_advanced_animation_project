@@ -33,6 +33,8 @@ img {
   width: 90%;
   max-width: 1720px;
   margin: 0 auto;
+  z-index: 1;
+  position: relative;
 }
 
 #navbar_logo {
