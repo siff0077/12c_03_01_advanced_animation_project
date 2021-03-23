@@ -103,6 +103,16 @@ h1 {
   font-style: normal;
 }
 
+h3 {
+  margin-left: 3.5vh;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-family: hero-new, sans-serif;
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 0.8em;
+}
+
 #frontpage_container {
   display: flex;
   justify-content: center;
