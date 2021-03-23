@@ -1,3 +1,23 @@
+:root {
+  --matteblue: #778896;
+  --lightblue: #c9d7e3;
+  --brown: #968468;
+  --lightbrown: #e3d9ca;
+  --white: #fcfeff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+/***NAVIGATION***/
+
 .nav_container {
   width: 100%;
   background-color: --white;
@@ -48,6 +68,143 @@
   background: black;
 }
 
+/***CONFIGURATOR PAGE***/
+
+h1,
+h2 {
+  font-family: wreath, sans-serif;
+  font-weight: 700;
+}
+
+h3 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+#headlines {
+  padding: 1em;
+}
+
+#product_box {
+  background-color: #c9d7e3;
+  height: auto;
+  width: 100vw;
+  padding: 1em;
+}
+
+#bathtub_basic {
+  /* background-image: url("layout_images/bathtub_background.jpg"); */
+  display: flex;
+  height: 40vh;
+  width: 80vw;
+  align-items: center;
+}
+
+#selected_features {
+  background-color: white;
+  border: solid 2px #968468;
+  width: 80vw;
+  height: 10vh;
+}
+
+#features {
+  display: flex;
+  flex-direction: column;
+}
+
+#features_elements {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+}
+
+#extra {
+  display: flex;
+  flex-direction: column;
+}
+
+#extra_elements {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+}
+
+#features_box {
+  grid-area: features_box;
+  padding: 1em;
+  background-color: #e3d9ca;
+  height: auto;
+  width: 100vw;
+}
+
+#features_box .option {
+  gap: 1em;
+  background-color: white;
+  border: solid 0.1em #968468;
+  box-shadow: 3px 3px 8px #968468;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+  height: 10vh;
+}
+
+#features_box .option:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+#features_box .option.chosen {
+  text-decoration: underline;
+  color: #000;
+}
+
+#features_box .option img {
+  width: 10vw;
+  height: auto;
+}
+
+#features_box #shower img {
+  width: 4vw;
+  height: auto;
+}
+
+/* #features_box .option figcaption {
+  font-size: 10px;
+} */
+
+/***FOOTER***/
+#footer_picture {
+  opacity: 60%;
+}
+#blue_banner {
+  background-color: var(--lightblue);
+  height: 5vw;
+  margin-top: -4px;
+}
+#footer_container {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 10px;
+}
+p {
+  font-size: 2vw;
+}
+#footer_logo {
+  width: 8%;
+}
+
+/***CLASSES***/
+
+#product_box .hide {
+  display: none;
+}
+
+/***MEDIA Q***/
+
+/*---------mobile---------*/
 @media screen and (max-width: 768px) {
   .nav_container {
     position: relative;
@@ -120,4 +277,48 @@
   #mobile_menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+}
+
+/*-------tablet--------*/
+@media screen and (min-width: 768px) {
+  h1 {
+    margin-top: 8vh;
+    margin-left: 10vh;
+  }
+
+  #navbar_logo {
+    margin-left: 8vh;
+  }
+}
+
+/*---------laptop---------*/
+@media screen and (min-width: 1024px) {
+  h1 {
+    margin-left: 11.5vh;
+    margin-top: 12vh;
+  }
+
+  #navbar_logo {
+    margin-left: 1vh;
+  }
+}
+
+/*----laptop large------*/
+@media screen and (min-width: 1440px) {
+  h1 {
+    margin-left: 13.5vh;
+    margin-top: 11vh;
+  }
+
+  #navbar_logo {
+    width: 80%;
+  }
+
+  p {
+    font-size: 1.5vw;
+  }
+}
+
+/*---------4K---------*/
+@media screen and (min-width: 2560px) {
 }
