@@ -29,33 +29,10 @@ progress {
   height: 15px;
   border: none;
   background: transparent;
+  z-index: 1;
 }
 progress::-webkit-progress-bar {
   background: transparent;
-}
-progress::-webkit-progress-value {
-  background: linear-gradient(
-    to left,
-    #db38b5,
-    #01b3e3,
-    #25ce7b,
-    #fdc741,
-    #ff6b01,
-    #fc4236
-  );
-  background-attachment: fixed;
-}
-progress::-moz-progress-bar {
-  background: linear-gradient(
-    to left,
-    #db38b5,
-    #01b3e3,
-    #25ce7b,
-    #fdc741,
-    #ff6b01,
-    #fc4236
-  );
-  background-attachment: fixed;
 }
 
 /*------------------------------------------------------------------------------------*/
@@ -115,7 +92,7 @@ progress::-moz-progress-bar {
 /*----------------------------------nav bar END---------------------------------------*/
 
 /*------------------------------------------------------------------------------------*/
-/*                                   FRONTPAGE START                                  */
+/*                                   SCROLLPAGE START                                  */
 /*------------------------------------------------------------------------------------*/
 
 h1 {
@@ -166,9 +143,47 @@ h2 {
   width: 80%;
 }
 
-.button {
+#bubble_background {
+  background-image: url(layout_images/bubbles_background.png);
+}
+
+section h2 {
   align-self: center;
-  color: var(--white);
+  color: var(--brown);
+  text-transform: uppercase;
+  font-size: 2.5vw;
+}
+
+section p {
+  align-self: center;
+}
+
+.box_left {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 2vw;
+  margin-top: 8vw;
+}
+
+.box_right {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 2vw;
+  margin-top: 8vw;
+}
+
+.content_left {
+  align-self: flex-start;
+  background-color: var(--lightblue);
+  padding: 20px;
+}
+
+.content_right {
+  align-self: flex-end;
+  background-color: var(--lightblue);
+  padding: 20px;
 }
 
 #footer_picture {
@@ -186,7 +201,7 @@ h2 {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
-  margin-top: 10px;
+  background-color: white;
 }
 
 p {
@@ -321,14 +336,23 @@ progress::-webkit-progress-value {
   background-attachment: fixed;
 }
 
-section {
-  min-height: 100vh;
-  padding: 10vw 5vh;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
+/*------------COME IN----------*/
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+  }
 }
 
 /*------------------------------------------------------------------------------------*/

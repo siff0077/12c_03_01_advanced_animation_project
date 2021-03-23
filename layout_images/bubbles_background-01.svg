@@ -1,0 +1,28 @@
+<svg id="Lag_1" data-name="Lag 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 740.09 935.91">
+  <defs>
+    <image id="image" width="4248" height="3840" xlink:href="txt_bubble.png"/>
+  </defs>
+  <use transform="translate(-142.3) scale(0.1)" opacity="0.64" xlink:href="#image"/>
+  <use transform="translate(503.4 197.33) scale(0.06)" opacity="0.64" xlink:href="#image"/>
+  <use transform="translate(14.72 450.1) scale(0.04)" opacity="0.64" xlink:href="#image"/>
+  <use transform="translate(298.13 590.65) scale(0.1)" opacity="0.64" xlink:href="#image"/>
+  <use transform="translate(210.26 436.51) scale(0.06)" opacity="0.64" xlink:href="#image"/>
+  <use transform="translate(-105.32 722.6) scale(0.06)" opacity="0.64" xlink:href="#image"/>
+  <use transform="translate(397.15 379.73) scale(0.04)" opacity="0.64" xlink:href="#image"/>
+  <use transform="translate(187.17 237.39) scale(0.04)" opacity="0.64" xlink:href="#image"/>
+  <use transform="translate(503.4 52.13) scale(0.04)" opacity="0.64" xlink:href="#image"/>
+  <use transform="translate(68.45 485.13) scale(0.03)" opacity="0.64" xlink:href="#image"/>
+  <use transform="translate(450.17 459.45) scale(0.03)" opacity="0.64" xlink:href="#image"/>
+  <use transform="translate(461.87 682.91) scale(0.08)" opacity="0.64" xlink:href="#image"/>
+  <use transform="translate(20.63 279.83) scale(0.11)" opacity="0.64" xlink:href="#image"/>
+  <use transform="translate(284.01 449.56) scale(0.01)" opacity="0.64" xlink:href="#image"/>
+  <use transform="translate(87.1 870.03) scale(0.01)" opacity="0.64" xlink:href="#image"/>
+  <use transform="translate(234.44 672.03) scale(0.01)" opacity="0.64" xlink:href="#image"/>
+  <use transform="translate(623.85 379.73) scale(0.01)" opacity="0.64" xlink:href="#image"/>
+  <use transform="translate(170.21 197.33) scale(0.01)" opacity="0.64" xlink:href="#image"/>
+  <use transform="translate(584.84 513.11) scale(0.03)" opacity="0.64" xlink:href="#image"/>
+  <use transform="translate(356.12 143.67) scale(0.03)" opacity="0.64" xlink:href="#image"/>
+  <use transform="translate(208.89 788.53) scale(0.03)" opacity="0.64" xlink:href="#image"/>
+  <use transform="translate(516.54 -88.6) scale(0.07)" opacity="0.64" xlink:href="#image"/>
+  <use transform="translate(33.11 592.45) scale(0.03)" opacity="0.64" xlink:href="#image"/>
+</svg>
