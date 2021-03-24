@@ -283,10 +283,9 @@ p {
   display: none;
 }
 
-/************************************** FROM TEDDY CONFIGURATOR *********/
-
 svg {
   width: 80%;
+  height: auto;
 }
 
 #shadow_Billede {
@@ -297,49 +296,6 @@ svg {
   fill: transparent;
   cursor: pointer;
 }
-
-path {
-  stroke-width: 2;
-}
-
-/* Animation classes */
-
-.animate-feature-in {
-  /* TODO: Create animation for adding a feature */
-  animation-name: move_in;
-  animation-iteration-count: 1;
-  animation-duration: 2s;
-}
-
-@keyframes move_in {
-  0% {
-    transform: translate(var(--diffx), var(--diffy)) scale(0);
-  }
-
-  100% {
-    transform: translate(0, 0) scale(1);
-  }
-}
-
-.animate-feature-out {
-  animation-name: move_out;
-  animation-iteration-count: 1;
-  animation-duration: 1s;
-  animation-direction: reverse;
-  /* TODO: Create animation for removing a feature */
-}
-
-@keyframes move_out {
-  0% {
-    transform: translate(var(--diffx), var(--diffy)) scale(0);
-  }
-
-  100% {
-    transform: translate(0, 0) scale(1);
-  }
-}
-
-/************************************** ABOVE IS THE TEDDY CONFIGURATOR *********/
 
 /***MEDIA Q***/
 
