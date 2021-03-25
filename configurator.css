@@ -170,11 +170,55 @@ footer p {
   padding: 1em;
 }
 
+#configurator {
+  position: relative;
+  width: 80vw;
+  height: auto;
+  padding: 1em;
+}
+
 #bathtub_basic {
   /* background-image: url("layout_images/bathtub_background.jpg"); */
   height: auto;
   width: 80vw;
+  position: relative;
 }
+
+svg {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+#feature_Billede {
+  padding-bottom: 100vh;
+}
+
+#shadow_Billede {
+  pointer-events: none;
+}
+
+#bathfeet_1,
+#bathfeet_2,
+#shower,
+#rubberduck,
+#towel_1,
+#towel_2,
+#water,
+#woodtray_1,
+#woodtray_2 {
+  position: absolute;
+}
+
+#rubberduck {
+  width: 50vw;
+  height: auto;
+}
+
+/*#shower {
+  width: 20vw;
+  height: auto;
+} */
 
 #selected_features {
   background-color: white;
@@ -283,15 +327,6 @@ p {
   display: none;
 }
 
-svg {
-  width: 80%;
-  height: auto;
-}
-
-#shadow_Billede {
-  pointer-events: none;
-}
-
 .g_to_interact_with {
   fill: transparent;
   cursor: pointer;
@@ -377,44 +412,157 @@ svg {
 
 /*-------tablet--------*/
 @media screen and (min-width: 768px) {
-  h1 {
-    margin-top: 8vh;
-    margin-left: 10vh;
-  }
-
   #navbar_logo {
     margin-left: 8vh;
+  }
+
+  #headlines,
+  #product_box,
+  #features_box {
+    padding: 3em;
+  }
+
+  #features_elements,
+  #extra_elements {
+    grid-gap: 6em;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+
+  #features_box .option {
+    width: 20vw;
+    height: 15vh;
+  }
+
+  h1,
+  h2 {
+    font-size: 3em;
+  }
+
+  h3 {
+    margin-top: 3em;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+  }
+
+  #headlines h3 {
+    margin-top: 1em;
+    margin-bottom: 0em;
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.3em;
   }
 }
 
 /*---------laptop---------*/
-@media screen and (min-width: 1024px) {
-  h1 {
-    margin-left: 11.5vh;
-    margin-top: 12vh;
-  }
-
+@media screen and (min-width: 1000px) {
   #navbar_logo {
     margin-left: 1vh;
   }
+
+  #headlines,
+  #product_box,
+  #features_box {
+    padding: 5em;
+  }
+
+  #headlines {
+    padding-top: 8em;
+  }
+
+  #content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #product_box {
+    width: 60%;
+    height: auto;
+  }
+
+  #features_box {
+    width: 40%;
+    height: auto;
+  }
+
+  #bathtub_basic {
+    height: auto;
+    width: 90%;
+  }
+
+  #features_box .option {
+    width: 10vw;
+    height: 15vh;
+  }
+
+  #features_box .option img {
+    width: auto;
+    height: 80%;
+  }
+
+  #features_box #shower img {
+    width: auto;
+    height: 80%;
+  }
+
+  #selected_features {
+    height: 25vh;
+    width: 80%;
+  }
+
+  /*  #features_elements,
+  #extra_elements {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+ 
+
+ 
+
+  #color_input input {
+    width: 15vw;
+    height: 5vh;
+  }
+
+  h1,
+  h2 {
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  #headlines h3 {
+    font-size: 1.7em;
+  }
+
+  h4 {
+    font-size: 0.8em;
+  } */
 }
 
 /*----laptop large------*/
 @media screen and (min-width: 1440px) {
-  h1 {
-    margin-left: 13.5vh;
-    margin-top: 11vh;
-  }
-
   #navbar_logo {
     width: 80%;
   }
 
-  p {
-    font-size: 1.5vw;
+  /* h1,
+  h2 {
+    font-size: 3em;
   }
-}
 
-/*---------4K---------*/
-@media screen and (min-width: 2560px) {
+  h3 {
+    font-size: 1.5em;
+  }
+
+  #headlines h3 {
+    font-size: 0.8em;
+  }
+
+  h4 {
+    font-size: 0.8em;
+  } */
 }

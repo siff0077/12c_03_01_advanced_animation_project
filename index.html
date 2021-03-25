@@ -22,7 +22,7 @@
             <ul class="nav_menu">
                 <li><a href="index.html" class="nav_links">Frontpage</a></li>
                 <li><a href="configurator.html" class="nav_links">Configurator</a></li>
-                <li><a href="facts.html" class="nav_links">Facts</a></li>
+                <li><a href="scrollpage.html" class="nav_links">Facts</a></li>
             </ul>
         </nav>
     </div>
@@ -32,9 +32,11 @@
     <h3>... for maximum relaxation</h3>
     </div>
     
+    <container id="content">
     <div id="product_box">
+      <container id="configurator">
         <div id="bathtub_basic"></div>
-        <img
+        <!-- <img
           src="svg/bathtubfeet_11.png"
           alt=""
           class="hide"
@@ -61,7 +63,7 @@
           class="hide"
           data-feature="rubberduck"
           id="rubberduck"
-        />
+        /> 
         <img
           src="svg/towel_11.png"
           alt=""
@@ -96,7 +98,9 @@
           class="hide"
           data-feature="woodtray_2"
           id="woodtray_2"
-        />
+        /> -->
+      </container>
+
     <div id="selected">
         <h4>Selected features</h4>
             <ul id="selected_features">
@@ -104,13 +108,13 @@
             </ul>
     </div>
 
-
     <div id="colorselector">
         <p>*First choose the color, you'd like, then click on the bathtub, bathtubfeet or shower based on which part you want to color</p>
         <h3>CHOOSE YOUR COLOR</h3>
         <div id="color_input">
           <input type="color" name="color_input" />
         </div>
+    </div>
     </div>
 
     <div id="features_box">
@@ -154,7 +158,7 @@
     </div>
     </div>
   </div>
-
+</container>
 
     <footer>
         <img id="footer_picture" src="layout_images/footer_pic.png" alt="footerpicture">

@@ -14,7 +14,7 @@ console.log("DOMContentLoaded");
 let elementToPaint; 
 
 async function start() {
-  let response = await fetch("svg/bathtub-01.svg");
+  let response = await fetch("svg/bathtub_newnew-01.svg");
   let mySvgData = await response.text();
   document.querySelector("#bathtub_basic").innerHTML = mySvgData;
   // register toggle-clicks
@@ -62,6 +62,9 @@ function toggleOption(event) {
 
   // TODO: Toggle feature in "model"
   features[feature] = !features[feature];
+
+  console.log(target);
+  console.log(feature);
 
   // If feature is (now) turned on:
   if (features[feature] === true) {
