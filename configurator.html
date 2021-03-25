@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>12c_03_01_advanced animation project</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ocw7pxm.css">
     <link rel="stylesheet" href="configurator.css">
-</head>
+    <link rel="stylesheet" href="https://use.typekit.net/sqz0gel.css">
+  </head>
 <body>
 
     <div class="nav_container">
         <nav class="navbar">
-            <img id="navbar_logo" src="/layout_images/logo.png" alt="logo">
+            <img id="navbar_logo" src="layout_images/logo.png" alt="logo">
             <div class="menu_toggle" id="mobile_menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -20,26 +22,83 @@
             <ul class="nav_menu">
                 <li><a href="index.html" class="nav_links">Frontpage</a></li>
                 <li><a href="configurator.html" class="nav_links">Configurator</a></li>
-                <li><a href="about.html" class="nav_links">About</a></li>
+                <li><a href="scrollpage.html" class="nav_links">Facts</a></li>
             </ul>
         </nav>
     </div>
 
-
-    <h1>Customised bath</h1>
-
-    <div id="frontpage_container">
-        <div class="column_top">
-            <h2>Relax and <br> enjoy life?</h2>
-            <button type="button">Design your bath here</button>
-
-        </div>
+    <div id="headlines">
+    <h1>Customise your own bathtub</h1>
+    <h3>... for maximum relaxation</h3>
+    </div>
     
-        <div class="column_buttom">
-            <img src="placeholder.png" alt="Girl in a jacket">
+    <container id="content">
+    <div id="product_box">
+      <container id="configurator">
+        <div id="bathtub_basic"></div>
+      </container>
+
+      <div id="colorselector">
+        <p>*You must select your prefered color for the bathtub before adding any features!</p>
+        <p>*First click on the bathtub, then choose the color</p>
+        <h3>CHOOSE YOUR COLOR</h3>
+        <div id="color_input">
+          <input type="color" name="color_input" />
         </div>
     </div>
-   
+
+    </div>
+    
+
+    <div id="features_box">
+    <h2>Features</h2>
+    <div id="features">
+    <h3>CHOOSE FEATURE</h3>
+    <div id="features_elements">
+      <div id="feature_elm"><figure class="option" data-feature="shower">
+        <img src="svg/shower.png" alt="shower" />
+      </figure><figcaption>Shower</figcaption></div>
+      <div id="feature_elm"><figure class="option" data-feature="rubberduck">
+        <img src="svg/rubberduck.png" alt="rubberduck" />
+      </figure><figcaption>Duck</figcaption></div>
+      <div id="feature_elm"><figure class="option" data-feature="towelone">
+        <img src="svg/towelone.png" alt="towel_1" />
+      </figure><figcaption>Towels</figcaption></div>
+      <div id="feature_elm"><figure class="option" data-feature="toweltwo">
+        <img src="svg/toweltwo.png" alt="towel_2" />
+      </figure><figcaption>Towels</figcaption></div>
+      <div id="feature_elm"><figure class="option" data-feature="water">
+        <img src="svg/water.png" alt="water" />
+      </figure><figcaption>Roses</figcaption></div>
+      <div id="feature_elm"><figure class="option" data-feature="woodtrayone">
+        <img src="svg/woodtrayone.png" alt="woodtray_1" />
+      </figure><figcaption>Tray</figcaption></div>
+      <div id="feature_elm"><figure class="option" data-feature="woodtraytwo">
+        <img src="svg/woodtraytwo.png" alt="woodtray_2" />
+      </figure><figcaption>Tray</figcaption></div>
+    </div>
+  </div>
+  </div>
+</container>
+
+    <footer>
+        <img id="footer_picture" src="layout_images/footer_pic.png" alt="footerpicture">
+        <div id="blue_banner"></div>
+        <div id="footer_container">
+            <div id="column_left">
+                <p>This is not a real company<br>
+                This webpage is made<br>
+                for a project at KEA</p>
+            </div>
+            <img id="footer_logo" src="layout_images/logo.png" alt="logo">
+       
+             <div id="column_right">
+                 <p>Made by<br>
+                 Siff Leva Jensen<br>
+                 Sara Johanne Nielsen</p>
+             </div>
+        </div>
+    </footer>
 
 
     <script src="configurator.js"></script>
