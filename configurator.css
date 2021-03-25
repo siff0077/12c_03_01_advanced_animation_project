@@ -215,11 +215,6 @@ svg {
   height: auto;
 }
 
-/*#shower {
-  width: 20vw;
-  height: auto;
-} */
-
 #selected_features {
   background-color: white;
   border: solid 0.1em #778896;
@@ -286,11 +281,6 @@ svg {
 
 #features_box .option img {
   width: 10vw;
-  height: auto;
-}
-
-#features_box #shower img {
-  width: 4vw;
   height: auto;
 }
 
@@ -497,11 +487,6 @@ p {
   }
 
   #features_box .option img {
-    width: auto;
-    height: 80%;
-  }
-
-  #features_box #shower img {
     width: auto;
     height: 80%;
   }
