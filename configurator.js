@@ -8,6 +8,16 @@ menu.addEventListener('click', function() {
   menuLinks.classList.toggle('active');
 })
 
+const features = {
+  shower: false,
+  rubberduck: false,
+  water: false,
+  towelone: false,
+  toweltwo: false,
+  woodtrayone: false,
+  woodtraytwo: false,
+};
+
 document.addEventListener("DOMContentLoaded", start);
 console.log("DOMContentLoaded");
 
@@ -56,81 +66,66 @@ function clickColorInput() {
   }
 }
 
+
 function toggleOption(event) {
-  const target = event.currentTarget;
-  const feature = target.dataset.feature;
+    const target = event.currentTarget;
+    const feature = target.dataset.feature;
+  
+    //Toggle feature in model
+    features[feature] = !features[feature];
+    if (features[feature] === true) {
+      if (feature === "towelone" && features.toweltwo === true) {
+        document.querySelector(`[data-feature="toweltwo"]`).classList.add("hide");
+        document.querySelector(`[data-feature="toweltwo"]`).classList.remove("chosen");
+        features.towelonetwo = false;
+        alert("You can't add two towels at once");
+      } else if (feature === "toweltwo" && features.towelone === true) {
+        document.querySelector(`[data-feature="towelone"]`).classList.add("hide");
+        document.querySelector(`[data-feature="towelone"]`).classList.remove("chosen");
+        features.towelone = false;
+        alert("You can't add two towels at once");
+      }
+  
+      if (feature === "woodtrayone" && features.woodtraytwo === true) {
+        document.querySelector(`[data-feature="woodtraytwo"]`).classList.add("hide");
+        document.querySelector(`[data-feature="woodtraytwo"]`).classList.remove("chosen");
+        features.woodtrayone = false;
+        alert("You can't add two trays at once");
+      } else if (feature === "woodtraytwo" && features.woodtrayone === true) {
+        document.querySelector(`[data-feature="woodtrayone"]`).classList.add("hide");
+        document.querySelector(`[data-feature="woodtrayone"]`).classList.remove("chosen");
+        features.woodtraytwo = false;
+        alert("You can't add two trays at once");
+      }
 
-  // TODO: Toggle feature in "model"
-  features[feature] = !features[feature];
-
-  console.log(target);
-  console.log(feature);
-
-  // If feature is (now) turned on:
-  if (features[feature] === true) {
-    // - mark target as chosen (add class "chosen")
-    target.classList.add("chosen");
-    // - un-hide the feature-layer(s) in the #product-preview;
-    document
-      .querySelector(`[data-feature="${feature}"`)
-      .classList.remove("hide");
-    // - create featureElement and append to #selected ul
-    const newElm = createFeatureElement(feature);
-    document.querySelector("#selected ul").appendChild(newElm);
-    // feature added
-
-
-    const start = target.getBoundingClientRect();
-    const end = newElm.getBoundingClientRect();
-
-    const diffx = start.x - end.x + "px";
-    const diffy = start.y - end.y + "px";
-
-    newElm.style.setProperty("--diffx", diffx);
-    newElm.style.setProperty("--diffy", diffy);
-
+      console.log(target);
+  
+      //Select target and add chosen class
+      target.classList.add("chosen");
+  
+      //Remove the hide class
+      document.querySelector(`[data-feature="${feature}"]`).classList.remove("hide");
+    } else {
+      target.classList.remove("chosen");
+  
+      //Add the hide class
+      document.querySelector(`[data-feature="${feature}"]`).classList.add("hide");
+    }
   }
-  // TODO: More code
-  else {
-    target.classList.remove("chosen");
-    const theElm = document.querySelector(
-      `#selected [data-feature="${feature}"]`
-    );
 
-    const end = theElm.getBoundingClientRect();
-    const start = target.getBoundingClientRect();
-
-    const diffx = start.x - end.x + "px";
-    const diffy = start.y - end.y + "px";
-
-    theElm.style.setProperty("--diffx", diffx);
-    theElm.style.setProperty("--diffy", diffy);
-
-    theElm.offsetHeight;
-
-
-
-      theElm.remove();
-      document.querySelector(`[data-feature=${feature}`).classList.add("hide");
-      console.log(`Feature ${feature} is turned off!`);
-
+  function createFeatureElement(feature) {
+    const li = document.createElement("li");
+    li.dataset.feature = feature;
+  
+    const img = document.createElement("img");
+    img.src = `svg/${feature}.png`;
+    img.alt = capitalize(feature);
+  
+    li.append(img);
+  
+    return li;
   }
-}
-
-// Create featureElement to be appended to #selected ul - could have used a <template> instead
-function createFeatureElement(feature) {
-  const li = document.createElement("li");
-  li.dataset.feature = feature;
-
-  const img = document.createElement("img");
-  img.src = `svg/${feature}.png`;
-  img.alt = capitalize(feature);
-
-  li.append(img);
-
-  return li;
-}
-
-function capitalize(text) {
-  return text.substring(0, 1).toUpperCase() + text.substring(1).toLowerCase();
-}
+  
+  function capitalize(text) {
+    return text.substring(0, 1).toUpperCase() + text.substring(1).toLowerCase();
+  }

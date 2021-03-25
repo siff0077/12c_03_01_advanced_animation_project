@@ -16,25 +16,25 @@
   </g>
 
 <g id="feature_Billede" data-feature="rubberduck" class="hide">
-    <image id="shadow_Billede-2" data-feature="rubberduck" width="1022" height="1023" transform="translate(1)" xlink:href="svg/rubberduck1.png"/>
+    <image id="shadow_Billede-2" data-feature="rubberduck" width="1022" height="1023" transform="translate(1)" xlink:href="svg/rubberduck.png"/>
   </g>
   <g id="feature_Billede" data-feature="shower" class="hide">
-    <image id="shadow_Billede-2" data-feature="shower" width="1022" height="1023" transform="translate(1)" xlink:href="svg/shower1.png"/>
+    <image id="shadow_Billede-2" data-feature="shower" width="1022" height="1023" transform="translate(1)" xlink:href="svg/shower.png"/>
   </g>
-  <g id="feature_Billede" data-feature="towel_1" class="hide">
-    <image id="shadow_Billede-2" data-feature="towel_1" width="1022" height="1023" transform="translate(1)" xlink:href="svg/towel_11.png"/>
+  <g id="feature_Billede" data-feature="towelone" class="hide">
+    <image id="shadow_Billede-2" data-feature="towelone" width="1022" height="1023" transform="translate(1)" xlink:href="svg/towelone.png"/>
   </g>
-  <g id="feature_Billede" data-feature="towel_2" class="hide">
-    <image id="shadow_Billede-2" data-feature="towel_2" width="1022" height="1023" transform="translate(1)" xlink:href="svg/towel_21.png"/>
+  <g id="feature_Billede" data-feature="toweltwo" class="hide">
+    <image id="shadow_Billede-2" data-feature="toweltwo" width="1022" height="1023" transform="translate(1)" xlink:href="svg/toweltwo.png"/>
   </g>
   <g id="feature_Billede" data-feature="water" class="hide">
-    <image id="shadow_Billede-2" data-feature="water" width="1022" height="1023" transform="translate(1)" xlink:href="svg/water1.png"/>
+    <image id="shadow_Billede-2" data-feature="water" width="1022" height="1023" transform="translate(1)" xlink:href="svg/water.png"/>
   </g>
-  <g id="feature_Billede" data-feature="woodtray_1" class="hide">
-    <image id="shadow_Billede-2" data-feature="woodtray_1" width="1022" height="1023" transform="translate(1)" xlink:href="svg/woodtray_11.png"/>
+  <g id="feature_Billede" data-feature="woodtrayone" class="hide">
+    <image id="shadow_Billede-2" data-feature="woodtrayone" width="1022" height="1023" transform="translate(1)" xlink:href="svg/woodtrayone.png"/>
   </g>
-  <g id="feature_Billede" data-feature="woodtray_2" class="hide">
-    <image id="shadow_Billede-2" data-feature="woodtray_2" width="1022" height="1023" transform="translate(1)" xlink:href="svg/woodtray_21.png"/>
+  <g id="feature_Billede" data-feature="woodtraytwo" class="hide">
+    <image id="shadow_Billede-2" data-feature="woodtraytwo" width="1022" height="1023" transform="translate(1)" xlink:href="svg/woodtraytwo.png"/>
   </g>
 
 </svg>

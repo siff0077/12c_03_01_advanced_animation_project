@@ -151,6 +151,14 @@ p {
   font-family: hero-new, sans-serif;
   font-weight: 400;
   font-style: italic;
+  font-size: 3vw;
+}
+
+figcaption {
+  font-family: hero-new, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3vw;
 }
 
 footer p {
@@ -168,6 +176,9 @@ footer p {
   height: auto;
   width: 100vw;
   padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #configurator {
@@ -210,19 +221,6 @@ svg {
   position: absolute;
 }
 
-#rubberduck {
-  width: 50vw;
-  height: auto;
-}
-
-#selected_features {
-  background-color: white;
-  border: solid 0.1em #778896;
-  box-shadow: 3px 3px 8px #778896;
-  width: 80vw;
-  height: 10vh;
-}
-
 #colorselector {
   margin-top: 1em;
 }
@@ -236,6 +234,12 @@ svg {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+}
+
+#feature_elm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #extra {
@@ -255,6 +259,10 @@ svg {
   background-color: #e3d9ca;
   height: auto;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
 }
 
 #features_box .option {
@@ -280,8 +288,13 @@ svg {
 }
 
 #features_box .option img {
-  width: 10vw;
+  width: 100%;
   height: auto;
+}
+
+#features_box figure {
+  display: flex;
+  justify-content: center;
 }
 
 /* #features_box .option figcaption {
@@ -304,9 +317,7 @@ svg {
   flex-direction: row;
   margin-top: 10px;
 }
-p {
-  font-size: 2vw;
-}
+
 #footer_logo {
   width: 8%;
 }
@@ -414,7 +425,7 @@ p {
 
   #features_elements,
   #extra_elements {
-    grid-gap: 6em;
+    grid-gap: 3em;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
 
@@ -423,13 +434,22 @@ p {
     height: 15vh;
   }
 
+  #bathtub_basic {
+    width: 70%;
+    height: auto;
+  }
+
+  #color_input input {
+    width: 15%;
+    height: 3vh;
+  }
+
   h1,
   h2 {
     font-size: 3em;
   }
 
   h3 {
-    margin-top: 3em;
     margin-bottom: 0.5em;
     font-size: 1.5em;
   }
@@ -451,7 +471,6 @@ p {
     margin-left: 1vh;
   }
 
-  #headlines,
   #product_box,
   #features_box {
     padding: 5em;
@@ -477,8 +496,17 @@ p {
   }
 
   #bathtub_basic {
+    width: 55%;
     height: auto;
-    width: 90%;
+  }
+
+  #color_input input {
+    width: 15%;
+    height: 3vh;
+  }
+
+  #features_elements {
+    grid-gap: 1.7em;
   }
 
   #features_box .option {
@@ -491,41 +519,13 @@ p {
     height: 80%;
   }
 
-  #selected_features {
-    height: 25vh;
-    width: 80%;
+  figcaption {
+    font-size: 1.5vw;
   }
 
-  /*  #features_elements,
-  #extra_elements {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  p {
+    font-size: 1.2em;
   }
-
- 
-
- 
-
-  #color_input input {
-    width: 15vw;
-    height: 5vh;
-  }
-
-  h1,
-  h2 {
-    font-size: 3em;
-  }
-
-  h3 {
-    font-size: 1.5em;
-  }
-
-  #headlines h3 {
-    font-size: 1.7em;
-  }
-
-  h4 {
-    font-size: 0.8em;
-  } */
 }
 
 /*----laptop large------*/
@@ -534,20 +534,12 @@ p {
     width: 80%;
   }
 
-  /* h1,
-  h2 {
-    font-size: 3em;
+  #features_elements {
+    grid-gap: 1.7em;
   }
 
-  h3 {
-    font-size: 1.5em;
+  #features_box .option {
+    width: 9vw;
+    height: 14vh;
   }
-
-  #headlines h3 {
-    font-size: 0.8em;
-  }
-
-  h4 {
-    font-size: 0.8em;
-  } */
 }
