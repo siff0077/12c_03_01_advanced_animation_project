@@ -1,3 +1,76 @@
+/* Hero New Hairline
+
+font-family: hero-new-hairline, sans-serif;
+
+font-weight: 100;
+
+font-style: normal;
+
+
+Hero New Hairline Italic
+
+font-family: hero-new-hairline, sans-serif;
+
+font-weight: 100;
+
+font-style: italic;
+
+
+Hero New Regular
+
+font-family: hero-new, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Hero New Regular Italic
+
+font-family: hero-new, sans-serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Hero New Bold Italic
+
+font-family: hero-new, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+
+
+Hero New Bold
+
+font-family: hero-new, sans-serif;
+
+font-weight: 700;
+
+font-style: normal; */
+
+:root {
+  --matteblue: #778896;
+  --lightblue: #c9d7e3;
+  --brown: #968468;
+  --lightbrown: #e3d9ca;
+  --white: #fcfeff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+/***NAVIGATION***/
+
 .nav_container {
   width: 100%;
   background-color: --white;
@@ -33,6 +106,8 @@
 .nav_links {
   color: black;
   text-decoration: none;
+  z-index: 1;
+  position: relative;
 }
 
 .nav_links:hover {
@@ -48,6 +123,219 @@
   background: black;
 }
 
+/***CONFIGURATOR PAGE***/
+
+h1,
+h2 {
+  font-family: wreath, sans-serif;
+  font-weight: 700;
+}
+
+h3 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-family: hero-new, sans-serif;
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 0.8em;
+}
+
+h4 {
+  font-family: hero-new, sans-serif;
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 0.8em;
+}
+
+p {
+  font-family: hero-new, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3vw;
+}
+
+figcaption {
+  font-family: hero-new, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3vw;
+}
+
+footer p {
+  font-family: hero-new, sans-serif;
+  font-weight: lighter;
+  font-style: normal;
+}
+
+#headlines {
+  padding: 1em;
+}
+
+#product_box {
+  background-color: #c9d7e3;
+  height: auto;
+  width: 100vw;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#configurator {
+  position: relative;
+  width: 80vw;
+  height: auto;
+  padding: 1em;
+}
+
+#bathtub_basic {
+  /* background-image: url("layout_images/bathtub_background.jpg"); */
+  height: auto;
+  width: 80vw;
+  position: relative;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+#feature_Billede {
+  padding-bottom: 100vh;
+}
+
+#shadow_Billede {
+  pointer-events: none;
+}
+
+#bathfeet_1,
+#bathfeet_2,
+#shower,
+#rubberduck,
+#towel_1,
+#towel_2,
+#water,
+#woodtray_1,
+#woodtray_2 {
+  position: absolute;
+}
+
+#colorselector {
+  margin-top: 1em;
+}
+
+#features {
+  display: flex;
+  flex-direction: column;
+}
+
+#features_elements {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+}
+
+#feature_elm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#extra {
+  display: flex;
+  flex-direction: column;
+}
+
+#extra_elements {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+}
+
+#features_box {
+  grid-area: features_box;
+  padding: 1em;
+  background-color: #e3d9ca;
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+
+#features_box .option {
+  gap: 1em;
+  background-color: white;
+  border: solid 0.1em #968468;
+  box-shadow: 3px 3px 8px #968468;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+  height: 10vh;
+}
+
+#features_box .option:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+#features_box .option.chosen {
+  text-decoration: underline;
+  color: #000;
+}
+
+#features_box .option img {
+  width: 100%;
+  height: auto;
+}
+
+#features_box figure {
+  display: flex;
+  justify-content: center;
+}
+
+/* #features_box .option figcaption {
+  font-size: 10px;
+} */
+
+/***FOOTER***/
+#footer_picture {
+  opacity: 60%;
+}
+#blue_banner {
+  background-color: var(--lightblue);
+  height: 5vw;
+  margin-top: -4px;
+}
+#footer_container {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+#footer_logo {
+  width: 8%;
+}
+
+/***CLASSES***/
+
+#product_box .hide {
+  display: none;
+}
+
+.g_to_interact_with {
+  fill: transparent;
+  cursor: pointer;
+}
+
+/***MEDIA Q***/
+
+/*---------mobile---------*/
 @media screen and (max-width: 768px) {
   .nav_container {
     position: relative;
@@ -98,6 +386,7 @@
     top: 20%;
     right: 10%;
     transform: translate(5%, 20%);
+    z-index: 1;
   }
 
   .menu_toggle .bar {
@@ -119,5 +408,138 @@
 
   #mobile_menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/*-------tablet--------*/
+@media screen and (min-width: 768px) {
+  #navbar_logo {
+    margin-left: 8vh;
+  }
+
+  #headlines,
+  #product_box,
+  #features_box {
+    padding: 3em;
+  }
+
+  #features_elements,
+  #extra_elements {
+    grid-gap: 3em;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+
+  #features_box .option {
+    width: 20vw;
+    height: 15vh;
+  }
+
+  #bathtub_basic {
+    width: 70%;
+    height: auto;
+  }
+
+  #color_input input {
+    width: 15%;
+    height: 3vh;
+  }
+
+  h1,
+  h2 {
+    font-size: 3em;
+  }
+
+  h3 {
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+  }
+
+  #headlines h3 {
+    margin-top: 1em;
+    margin-bottom: 0em;
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.3em;
+  }
+}
+
+/*---------laptop---------*/
+@media screen and (min-width: 1000px) {
+  #navbar_logo {
+    margin-left: 1vh;
+  }
+
+  #product_box,
+  #features_box {
+    padding: 5em;
+  }
+
+  #headlines {
+    padding-top: 8em;
+  }
+
+  #content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #product_box {
+    width: 60%;
+    height: auto;
+  }
+
+  #features_box {
+    width: 40%;
+    height: auto;
+  }
+
+  #bathtub_basic {
+    width: 55%;
+    height: auto;
+  }
+
+  #color_input input {
+    width: 15%;
+    height: 3vh;
+  }
+
+  #features_elements {
+    grid-gap: 1.7em;
+  }
+
+  #features_box .option {
+    width: 10vw;
+    height: 15vh;
+  }
+
+  #features_box .option img {
+    width: auto;
+    height: 80%;
+  }
+
+  figcaption {
+    font-size: 1.5vw;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+}
+
+/*----laptop large------*/
+@media screen and (min-width: 1440px) {
+  #navbar_logo {
+    width: 80%;
+  }
+
+  #features_elements {
+    grid-gap: 1.7em;
+  }
+
+  #features_box .option {
+    width: 9vw;
+    height: 14vh;
   }
 }
